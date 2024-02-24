@@ -1,3 +1,6 @@
 .env
-bulk_data/
-*.ipynb
+output/*.json
+output/*.jsonl
+output/*.parquet
+DATA/*
+testing.ipynb
