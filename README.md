@@ -24,11 +24,11 @@ The data can be downloaded like this:
 
 Code is in Jupyter Notebooks:
 
-- 1_fc_stays_prepare_dockets.ipynb This notebook takes downloaded Federal Court dockets and puts them into the cleaned format made publicly available on HuggingFace
-- 2_fc_stays_gpt_training.ipynb This notebook takes human coded data in Excel files, converts them into the appropriate JSONL format for fine-tuning OpenAI models, and provides instructions about submitting fine-tuning jobs to OpenAI
-- 3_fc_stays_apply_gpt.ipynb This notebook takes Federal Court docket data and parses that data using OpenAI fine-tuned models to produce a table with docket entry level information about dockets
-- 4_fc_stays_final_parsing.ipynb. This notebook takes the docket entry level table produced in the prior notebook and applies logic to infer data at the docket level producing a table with data on outcomes and judges in all stay applications.
-- 5_fc_stays_analyze.ipynb This notebook takes the table of outcomes of all Federal Court stay applications and undertakes statistical analysis for the article
+- [1_fc_stays_prepare_dockets.ipynb](https://github.com/Refugee-Law-Lab/luck-of-the-draw-iii/blob/main/1_fc_stays_prepare_dockets.ipynb) This notebook takes downloaded Federal Court dockets and puts them into the cleaned format made publicly available on HuggingFace
+- [2_fc_stays_gpt_training.ipynb](https://github.com/Refugee-Law-Lab/luck-of-the-draw-iii/blob/main/2_fc_stays_gpt_training.ipynb) This notebook takes human coded data in Excel files, converts them into the appropriate JSONL format for fine-tuning OpenAI models, and provides instructions about submitting fine-tuning jobs to OpenAI
+- [3_fc_stays_apply_gpt.ipynb](https://github.com/Refugee-Law-Lab/luck-of-the-draw-iii/blob/main/3_fc_stays_apply_gpt.ipynb) This notebook takes Federal Court docket data and parses that data using OpenAI fine-tuned models to produce a table with docket entry level information about dockets
+- [4_fc_stays_final_parsing.ipynb](https://github.com/Refugee-Law-Lab/luck-of-the-draw-iii/blob/main/4_fc_stays_final_parsing.ipynb). This notebook takes the docket entry level table produced in the prior notebook and applies logic to infer data at the docket level producing a table with data on outcomes and judges in all stay applications.
+- [5_fc_stays_analyze.ipynb](https://github.com/Refugee-Law-Lab/luck-of-the-draw-iii/blob/main/5_fc_stays_analyze.ipynb) This notebook takes the table of outcomes of all Federal Court stay applications and undertakes statistical analysis for the article
 
 
 Note: The initial article used a small OpenAI model, ada, that as of January 2024 has been deprecated and is no longer available. The code provides a process to obtain similar (but slightly different) data using a model currently available (GPT3.5 Turbo). The data obtained 
